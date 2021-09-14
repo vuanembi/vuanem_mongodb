@@ -3,6 +3,7 @@ version: '2'
 services:
   mongodb:
     image: docker.io/bitnami/mongodb:latest
+    restart: unless-stopped
     ports:
       - "27017:27017"
     volumes:
